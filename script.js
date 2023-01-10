@@ -65,7 +65,7 @@ function displayCountDownOnPage() {
     } else if ((miliSec == 0) & (secs == 0) & (mins == 0) & (hrs != 0)) {
         hrs = hrs - 1;
         mins = 59;
-        secs = 60;
+        secs = 59;
         miliSec = 100;
         document.querySelector(".seconds").value = secs.toString().padStart(2, 0);
         document.querySelector(".minutes").value = mins.toString().padStart(2, 0);
